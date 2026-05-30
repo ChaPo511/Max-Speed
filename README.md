@@ -6,8 +6,8 @@
 
 **Universal Vehicle Speed Limiter for FiveM**
 
-[![Version](https://img.shields.io/badge/version-1.0.0-blue?style=flat-square)](https://github.com)
-[![Framework](https://img.shields.io/badge/framework-Standalone%20%7C%20ESX%20%7C%20QBCore%20%7C%20QBX-green?style=flat-square)](https://github.com)
+[![Version](https://img.shields.io/badge/version-1.0.0-blue?style=flat-square)](https://github.com/ChaPo511/max-speed)
+[![Framework](https://img.shields.io/badge/framework-Standalone%20%7C%20ESX%20%7C%20QBCore%20%7C%20QBX-green?style=flat-square)](https://github.com/ChaPo511/max-speed)
 [![FiveM](https://img.shields.io/badge/FiveM-Compatible-red?style=flat-square)](https://fivem.net)
 [![License](https://img.shields.io/badge/license-MIT-yellow?style=flat-square)](LICENSE)
 
@@ -45,9 +45,9 @@
 
 ### ⚙️ الإعداد
 
-في ملف `client.lua` السطر 8:
+في ملف `config.lua`:
 ```lua
-local MAX_SPEED_KMH = 290.0   -- ← غيّر هنا
+Config.MaxSpeedKMH = 290.0   -- ← غيّر هنا
 ```
 
 ### 🤝 التوافق مع الفريموركات
@@ -87,9 +87,9 @@ When a vehicle reaches the configured speed — it stays **stable** at that exac
 
 ### ⚙️ Configuration
 
-In `client.lua` line 8:
+In `config.lua`:
 ```lua
-local MAX_SPEED_KMH = 290.0   -- Change this value
+Config.MaxSpeedKMH = 290.0   -- Change this value
 ```
 
 | Value | Speed |
@@ -139,9 +139,9 @@ Quand un véhicule atteint la limite configurée — il reste **stable** à cett
 
 ### ⚙️ Configuration
 
-Dans `client.lua` ligne 8 :
+Dans `config.lua` :
 ```lua
-local MAX_SPEED_KMH = 290.0   -- Modifiez cette valeur
+Config.MaxSpeedKMH = 290.0   -- Modifiez cette valeur
 ```
 
 ### 🤝 Compatibilité
@@ -181,9 +181,9 @@ Cuando un vehículo alcanza el límite — se mantiene **estable** en esa veloci
 
 ### ⚙️ Configuración
 
-En `client.lua` línea 8:
+En `config.lua`:
 ```lua
-local MAX_SPEED_KMH = 290.0   -- Cambia este valor
+Config.MaxSpeedKMH = 290.0   -- Cambia este valor
 ```
 
 ---
@@ -247,8 +247,14 @@ Quando um veículo atinge o limite — fica **estável** nessa velocidade exata,
 ```
 max-speed/
 ├── fxmanifest.lua    # Resource manifest
+├── config.lua        # Configuration file
 ├── client.lua        # Client-side speed limiter
 ├── server.lua        # Server-side logging
+├── locales/          # Language files
+│   ├── en.lua
+│   ├── fr.lua
+│   ├── pt.lua
+│   └── ...
 └── README.md         # This file
 ```
 
@@ -267,6 +273,6 @@ max-speed/
 
 *Made with ❤️ for FiveM Community*
 
-**MIT License** — Free to use, modify and share.
+**[ChaPo511](https://github.com/ChaPo511)** · **MIT License** — Free to use, modify and share.
 
 </div>
